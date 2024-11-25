@@ -1,4 +1,4 @@
--- Create FactOrders Table
+
 CREATE TABLE FactOrders (
     OrderID SERIAL PRIMARY KEY,
     OrderDate DATE NOT NULL,
@@ -6,14 +6,14 @@ CREATE TABLE FactOrders (
     TotalAmount DECIMAL(10, 2) NOT NULL
 );
 
--- Create FactClientesAtendidos Table
+
 CREATE TABLE FactClientesAtendidos (
     ClientID SERIAL PRIMARY KEY,
     AtencionFecha DATE NOT NULL,
     AtencionTipo VARCHAR(50) NOT NULL
 );
 
--- Create FactOrderDetails Table
+
 CREATE TABLE FactOrderDetails (
     OrderDetailID SERIAL PRIMARY KEY,
     OrderID INT NOT NULL,
